@@ -18,7 +18,7 @@ class Neo4jToMatrix(object):
     def __init__(self, select_name, label_name):
 
         # 与neo4j服务器建立连接
-        self.graph = Graph("ip//:7474", username="xxxx", password="xxxx")
+        self.graph = Graph("127.0.0.1//:7474", username="neo4j", password="mojitest")
         self.links = []
         self.select_name = select_name
         self.label_name = label_name
